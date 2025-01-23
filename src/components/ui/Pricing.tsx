@@ -54,12 +54,12 @@ const plans = [
 export function Pricing() {
   return (
     <section
-      aria-labelledby="solar-analytics"
+      aria-labelledby="pricing"
       className="relative mx-auto w-full max-w-6xl overflow-hidden"
     >
       <div>
         <h2
-          id="solar-analytics"
+          id="pricing"
           className="relative scroll-my-24 text-lg font-semibold tracking-tight text-[#27ae5f]"
         >
           Pricing
@@ -69,7 +69,7 @@ export function Pricing() {
           Simple No-Tricks Pricing
         </p>
       </div>
-      <div className="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3 mt-10">
+      <div className="mt-10 grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
         {plans.map((plan, planIdx) => (
           <div
             key={planIdx}

@@ -41,20 +41,27 @@ export function NavBar() {
               <Link className="px-2 py-1 text-gray-900" href="#solutions">
                 Solutions
               </Link>
-              <Link className="px-2 py-1 text-gray-900" href="#farm-management">
-                Farm Management
-              </Link>
-              <Link className="px-2 py-1 text-gray-900" href="#solar-analytics">
-                Analytics
+              <Link className="px-2 py-1 text-gray-900" href="#pricing">
+                Pricing
               </Link>
             </div>
           </nav>
-          <Button
-            variant="secondary"
-            className="hidden h-10 font-semibold sm:block"
-          >
-            Get Started
-          </Button>
+          <div className="flex items-center gap-10 font-medium">
+            <Link
+              className="hidden px-2 py-1 text-gray-900 sm:block"
+              href="#pricing"
+            >
+              Login
+            </Link>
+            {/* line to sepearte the login and get started button */}
+            <div className="hidden h-6 w-[1px] bg-gray-400 sm:block"></div>
+            <Button
+              variant="secondary"
+              className="hidden h-10 font-semibold sm:block"
+            >
+              Get Started
+            </Button>
+          </div>
           <Button
             onClick={() => setOpen(!open)}
             variant="secondary"
@@ -85,10 +92,10 @@ export function NavBar() {
               <Link href="#solutions">Solutions</Link>
             </li>
             <li onClick={() => setOpen(false)}>
-              <Link href="#farm-management">Farm Management</Link>
+              <Link href="#pricing">Pricing</Link>
             </li>
             <li onClick={() => setOpen(false)}>
-              <Link href="#solar-analytics">Analytics</Link>
+              <Link href="#pricing">Login</Link>
             </li>
           </ul>
           <Button variant="secondary" className="text-lg">
