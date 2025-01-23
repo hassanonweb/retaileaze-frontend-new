@@ -123,7 +123,7 @@ const Footer = () => {
         <div className="mr-auto flex w-full justify-between lg:w-fit lg:flex-col">
           <Link
             href="/"
-            className="flex items-center font-medium text-gray-700 select-none sm:text-sm ml-4"
+            className="ml-4 flex items-center font-medium text-gray-700 select-none sm:text-sm"
           >
             <Image
               src="/logo-icon.svg"

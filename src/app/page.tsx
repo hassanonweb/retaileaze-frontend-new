@@ -1,3 +1,4 @@
+import { Contact } from "@/components/ui/Contact"
 import CTA from "@/components/ui/CTA"
 import FeatureDivider from "@/components/ui/FeatureDivider"
 import Features from "@/components/ui/Features"
@@ -29,8 +30,12 @@ export default function Home() {
         <Pricing />
       </div>
       <FeatureDivider className="my-16 max-w-6xl" />
-      <div className="mb-16 px-4 xl:px-0">
+      <div className="mt-6 mb-6 px-4 xl:px-0">
         <CTA />
+      </div>
+      <FeatureDivider className="my-16 max-w-6xl" />
+      <div className="mt-6 mb-16 px-4 xl:px-0">
+        <Contact />
       </div>
     </main>
   )

@@ -44,6 +44,9 @@ export function NavBar() {
               <Link className="px-2 py-1 text-gray-900" href="#pricing">
                 Pricing
               </Link>
+              <Link className="px-2 py-1 text-gray-900" href="#pricing">
+                Contact
+              </Link>
             </div>
           </nav>
           <div className="flex items-center gap-10 font-medium">

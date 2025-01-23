@@ -1,4 +1,5 @@
 import { CheckCircle, XCircle } from "lucide-react" // Updated icon imports
+import FeatureDivider from "./FeatureDivider"
 
 const plans = [
   {
@@ -57,10 +58,95 @@ export function Pricing() {
       aria-labelledby="pricing"
       className="relative mx-auto w-full max-w-6xl overflow-hidden"
     >
+      
+      <div className="pointer-events-none inset-0 select-none">
+        {/* Left */}
+        <div
+          className="absolute inset-y-0 my-[5rem] w-px"
+          style={{
+            maskImage:
+              "linear-gradient(transparent, white 5rem, white calc(100% - 5rem), transparent)",
+          }}
+        >
+          <svg className="h-full w-full" preserveAspectRatio="none">
+            <line
+              x1="0"
+              y1="0"
+              x2="0"
+              y2="100%"
+              className="stroke-gray-300"
+              strokeWidth="2"
+              strokeDasharray="3 3"
+            />
+          </svg>
+        </div>
+
+        {/* Right */}
+        <div
+          className="absolute inset-y-0 right-0 my-[5rem] w-px"
+          style={{
+            maskImage:
+              "linear-gradient(transparent, white 5rem, white calc(100% - 5rem), transparent)",
+          }}
+        >
+          <svg className="h-full w-full" preserveAspectRatio="none">
+            <line
+              x1="0"
+              y1="0"
+              x2="0"
+              y2="100%"
+              className="stroke-gray-300"
+              strokeWidth="2"
+              strokeDasharray="3 3"
+            />
+          </svg>
+        </div>
+
+        {/* 25% */}
+        <div
+          className="absolute inset-y-0 left-1/3 -z-10 my-[5rem] hidden w-px sm:block"
+          style={{
+            maskImage:
+              "linear-gradient(transparent, white 5rem, white calc(100% - 5rem), transparent)",
+          }}
+        >
+          <svg className="h-full w-full" preserveAspectRatio="none">
+            <line
+              x1="0"
+              y1="0"
+              x2="0"
+              y2="100%"
+              className="stroke-gray-300"
+              strokeWidth="2"
+              strokeDasharray="3 3"
+            />
+          </svg>
+        </div>
+        {/* 75% */}
+        <div
+          className="absolute inset-y-0 left-2/3 -z-10 my-[5rem] hidden w-px sm:block"
+          style={{
+            maskImage:
+              "linear-gradient(transparent, white 5rem, white calc(100% - 5rem), transparent)",
+          }}
+        >
+          <svg className="h-full w-full" preserveAspectRatio="none">
+            <line
+              x1="0"
+              y1="0"
+              x2="0"
+              y2="100%"
+              className="stroke-gray-300"
+              strokeWidth="2"
+              strokeDasharray="3 3"
+            />
+          </svg>
+        </div>
+      </div>
       <div>
         <h2
           id="pricing"
-          className="relative scroll-my-24 text-lg font-semibold tracking-tight text-[#27ae5f]"
+          className="relative ml-2 scroll-my-24 text-lg font-semibold tracking-tight text-[#27ae5f]"
         >
           Pricing
           <div className="absolute top-1 -left-[8px] h-5 w-[3px] rounded-r-sm bg-[#27ae5f]" />
@@ -71,13 +157,10 @@ export function Pricing() {
       </div>
       <div className="mt-10 grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
         {plans.map((plan, planIdx) => (
-          <div
-            key={planIdx}
-            className="relative rounded-lg border border-gray-200 bg-white p-6 dark:border-gray-700 dark:bg-gray-800"
-          >
+          <div key={planIdx} className="relative rounded-lg p-6">
             {plan.isRecommended && (
               <div className="flex justify-center">
-                <span className="absolute top-0 -translate-y-1/2 rounded-full bg-[#27ae5f] px-3 py-1 text-sm font-medium text-white">
+                <span className="absolute top-0 -translate-y-1/2 rounded-full bg-[#E67E22] px-3 py-1 text-sm font-medium text-white">
                   Recommended
                 </span>
               </div>
@@ -95,7 +178,7 @@ export function Pricing() {
               <span className="ml-1 text-gray-600 dark:text-gray-300">/mo</span>
             </p>
             {/* Divider */}
-            <hr className="my-4 border-gray-200 dark:border-gray-700" />
+            <FeatureDivider />
             {/* Features List */}
             <ul className="mt-4 space-y-2 text-gray-700 dark:text-gray-300">
               {plan.features.map((feature, featureIdx) => (
