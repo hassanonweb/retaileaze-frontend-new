@@ -1,13 +1,13 @@
 import {
-  RiCarFill,
   RiCheckLine,
   RiCircleLine,
+  RiCustomerService2Fill,
   RiLoaderFill,
-  RiPlaneFill,
+  RiLoopLeftLine,
   RiTruckFill,
 } from "@remixicon/react"
+import { Boxes, Circle, Store } from "lucide-react"
 import Image from "next/image"
-import { Icons } from "../Icons"
 import { Orbit } from "../Orbit"
 import FeaturesList from "./FeaturesList"
 
@@ -191,7 +191,7 @@ export default function Features() {
                           <RiCircleLine className="size-3 shrink-0 text-white" />
                         </div>
                         <div className="rounded-r-full bg-white/50 py-0.5 pr-1.5 pl-1 text-xs whitespace-nowrap ring-1 ring-gray-200">
-                          Drivetrain Error
+                          Booking Error
                         </div>
                       </div>
                     </div>
@@ -207,7 +207,7 @@ export default function Features() {
                     key="obj2"
                     className="relative flex items-center justify-center"
                   >
-                    <RiPlaneFill className="z-10 size-5 rotate-90 text-gray-900" />
+                    <RiLoopLeftLine className="z-10 size-5 rotate-90 text-gray-900" />
                     <div className="absolute size-10 rounded-full bg-white/50 ring-1 shadow-lg ring-black/5"></div>
                     <div className="absolute -top-5 left-4">
                       <div className="flex gap-1">
@@ -215,7 +215,7 @@ export default function Features() {
                           <RiLoaderFill className="size-3 shrink-0 animate-spin text-white" />
                         </div>
                         <div className="rounded-r-full bg-white/50 py-0.5 pr-1.5 pl-1 text-xs ring-1 ring-gray-200">
-                          Charging
+                          Syncing
                         </div>
                       </div>
                     </div>
@@ -231,7 +231,7 @@ export default function Features() {
                     key="obj3"
                     className="relative flex items-center justify-center"
                   >
-                    <RiCarFill className="z-10 size-5 text-gray-900" />
+                    <RiCustomerService2Fill className="z-10 size-5 text-gray-900" />
                     <div className="absolute size-10 rounded-full bg-white/50 ring-1 shadow-lg ring-black/5"></div>
                     <div
                       style={{
@@ -244,15 +244,15 @@ export default function Features() {
                     key="obj4"
                     className="relative flex items-center justify-center"
                   >
-                    <Icons.QuadCopter className="z-10 size-5 rotate-90 text-gray-900" />
+                    <Boxes className="z-10 size-5 text-gray-900" />
                     <div className="absolute size-10 rounded-full bg-white/50 ring-1 shadow-lg ring-black/5"></div>
                     <div className="absolute -top-5 left-4">
                       <div className="flex gap-1">
-                        <div className="flex items-center justify-center rounded-l-full bg-emerald-500 p-1 text-xs ring-1 ring-gray-200">
-                          <RiCheckLine className="size-3 shrink-0 text-white" />
+                        <div className="flex items-center justify-center rounded-l-full bg-yellow-500 p-1 text-xs ring-1 ring-gray-200">
+                          <Circle className="size-3 shrink-0 text-white" />
                         </div>
                         <div className="rounded-r-full bg-white/50 py-0.5 pr-1.5 pl-1 text-xs ring-1 ring-gray-200">
-                          Farming
+                          Orders
                         </div>
                       </div>
                     </div>
@@ -268,8 +268,18 @@ export default function Features() {
                     key="obj5"
                     className="relative flex items-center justify-center"
                   >
-                    <RiPlaneFill className="z-10 size-5 rotate-90 text-gray-900" />
+                    <Store className="z-10 size-5 text-gray-900" />
                     <div className="absolute size-10 rounded-full bg-white/50 ring-1 shadow-lg ring-black/5"></div>
+                    <div className="absolute -top-5 left-4">
+                      <div className="flex gap-1">
+                        <div className="flex items-center justify-center rounded-l-full bg-emerald-500 p-1 text-xs ring-1 ring-gray-200">
+                          <RiCheckLine className="size-3 shrink-0 text-white" />
+                        </div>
+                        <div className="rounded-r-full bg-white/50 py-0.5 pr-1.5 pl-1 text-xs ring-1 ring-gray-200">
+                          Connected
+                        </div>
+                      </div>
+                    </div>
                     <div
                       style={{
                         animationDelay: "3s",
